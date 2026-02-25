@@ -31,8 +31,7 @@ export function Hero() {
           Restaurant & Hotel
         </p>
         <h1
-          className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-white tracking-tight opacity-0 animate-fade-up animate-fade-up-delay-2"
-          style={{ animationFillMode: "forwards" }}
+          className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-white tracking-tight animate-hero-title animate-hero-title-delay-1"
         >
           GreenKey
         </h1>

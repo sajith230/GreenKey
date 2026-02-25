@@ -16,14 +16,14 @@ export default function Home() {
       <Hero />
 
       {/* Paddy field — hotel located near the paddy fields (same design as Finest Garden) */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section">
           <SectionIntro
             eyebrow="Our Location"
             title="Nestled by the Paddy Fields"
             description="GreenKey sits beside serene paddy fields. Wake to golden views and the calm of the countryside."
           />
-          <div className="mt-12 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
+          <div className="mt-6 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
             <div className="relative aspect-[21/9] min-h-[280px]">
               <Image
                 src="/3.jpeg"
@@ -39,14 +39,14 @@ export default function Home() {
       </section>
 
       {/* Best garden — 4.jpeg */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section animate-fade-up-section-delay-2">
           <SectionIntro
             eyebrow="Our Garden"
             title="The Finest Garden"
             description="GreenKey is home to a stunning garden — a peaceful retreat where you can relax and reconnect with nature."
           />
-          <div className="mt-12 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
+          <div className="mt-6 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
             <div className="relative aspect-[21/9] min-h-[280px]">
               <Image
                 src="/4.jpeg"
@@ -61,14 +61,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[var(--cream)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-12 lg:py-16 bg-[var(--cream)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section animate-fade-up-section-delay-3">
           <SectionIntro
             eyebrow="Welcome"
             title="Experience GreenKey"
             description="A sanctuary where exceptional cuisine, comfortable stays, and unforgettable safari adventures come together."
           />
-          <div className="mt-16 grid gap-10 md:grid-cols-3">
+          <div className="mt-6 grid gap-10 md:grid-cols-3">
             <Card
               href="/room"
               image={ROOM_IMAGE}
@@ -88,7 +88,7 @@ export default function Home() {
               description="Explore the wild with guided safaris. Get close to wildlife and create memories that last a lifetime."
             />
           </div>
-          <div className="mt-14 text-center">
+          <div className="mt-6 text-center">
             <Button href="/contact" variant="primary" size="lg">
               Get in Touch
             </Button>
@@ -96,14 +96,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section animate-fade-up-section-delay-4">
           <SectionIntro
             eyebrow="Why GreenKey"
             title="Where Every Moment Matters"
             description="We blend comfort, cuisine, and adventure into one seamless experience."
           />
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <FeatureCard
               icon="🌿"
               title="Nature First"
