@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -21,9 +22,17 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16 lg:h-20">
         <Link
           href="/"
-          className="font-serif text-xl lg:text-2xl font-semibold text-[var(--green-key)] tracking-tight"
+          className="flex items-center gap-2 font-serif text-xl lg:text-2xl font-semibold text-[var(--green-key)] tracking-tight"
         >
-          GreenKey
+          <Image
+            src="/9.jpeg"
+            alt="GreenKey — Hotel & Restaurant"
+            width={44}
+            height={44}
+            className="h-10 w-10 lg:h-12 lg:w-12 rounded-lg object-contain"
+            unoptimized
+          />
+          <span>GreenKey</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
