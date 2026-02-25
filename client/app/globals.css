@@ -90,3 +90,33 @@ body {
 .animate-fade-up-delay-1 { animation-delay: 0.1s; }
 .animate-fade-up-delay-2 { animation-delay: 0.2s; }
 .animate-fade-up-delay-3 { animation-delay: 0.3s; }
+.animate-fade-up-delay-4 { animation-delay: 0.4s; }
+.animate-fade-up-delay-5 { animation-delay: 0.5s; }
+
+/* Section reveal on load */
+.animate-fade-up-section {
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+  animation-delay: 0.25s;
+}
+.animate-fade-up-section-delay-2 { animation-delay: 0.4s; }
+.animate-fade-up-section-delay-3 { animation-delay: 0.55s; }
+.animate-fade-up-section-delay-4 { animation-delay: 0.7s; }
+
+/* Hero / page title — standout entrance */
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-hero-title {
+  animation: heroTitleIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+.animate-hero-title-delay-1 { animation-delay: 0.15s; }
+.animate-hero-title-delay-2 { animation-delay: 0.2s; }

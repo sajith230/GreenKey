@@ -39,7 +39,7 @@ export default function RoomPage() {
         imageAlt="GreenKey hotel rooms"
       />
       <section className="py-16 lg:py-24 bg-[var(--cream)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section">
           <p className="text-center text-[var(--muted)] max-w-2xl mx-auto">
             Each room is designed to blend seamlessly with the surrounding landscape.
             Premium linens, organic toiletries, and thoughtful touches await.

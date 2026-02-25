@@ -39,7 +39,7 @@ export default function FoodPage() {
         imageAlt="GreenKey restaurant dining"
       />
       <section className="py-16 lg:py-24 bg-[var(--cream)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section">
           <p className="text-center text-[var(--muted)] max-w-2xl mx-auto">
             Our kitchen celebrates local ingredients and time-honored techniques.
             From breakfast by the garden to candlelit dinners, every meal is an experience.
