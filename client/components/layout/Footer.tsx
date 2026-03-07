@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/room", label: "Room" },
   { href: "/food", label: "Food" },
   { href: "/safari", label: "Safari" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -16,18 +16,12 @@ export function Footer() {
         <div className="py-12 lg:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <Image
-                src="/9.jpeg"
-                alt="GreenKey — Hotel & Restaurant"
-                width={56}
-                height={56}
-                className="h-12 w-12 lg:h-14 lg:w-14 rounded-lg object-contain"
-                unoptimized
-              />
-              <span className="font-serif text-2xl lg:text-3xl font-semibold text-white tracking-tight">
-                GreenKey
-              </span>
+            <Link
+              href="/"
+              className="font-serif text-2xl lg:text-3xl font-semibold text-white tracking-tight hover:text-white/90 transition-colors"
+              aria-label="GreenKey — Home"
+            >
+              GreenKey
             </Link>
             <p className="mt-3 text-[var(--cream)]/80 text-sm leading-relaxed max-w-sm">
               Where nature meets luxury. Dine, stay, and explore in the heart of
@@ -86,10 +80,10 @@ export function Footer() {
                   </svg>
                 </span>
                 <a
-                  href="mailto:greenkey@gmail.com"
+                  href="mailto:greenkeypvt@gmail.com"
                   className="hover:text-white transition-colors break-all"
                 >
-                  greenkey@gmail.com
+                  greenkeypvt@gmail.com
                 </a>
               </li>
             </ul>

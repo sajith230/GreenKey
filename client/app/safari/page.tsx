@@ -12,7 +12,7 @@ const experiences = [
     description: "Set out at dawn when wildlife is most active. Our expert guides will take you through the reserve in open vehicles.",
   },
   {
-    image: "/6.jpg",
+    image: "/15.jpg",
     title: "Sunset Safari",
     description: "End the day with a golden-hour safari. Watch the landscape transform as the sun sets over the plains.",
   },
@@ -76,7 +76,7 @@ export default function SafariPage() {
             ))}
           </div>
           <div className="mt-14 text-center">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="https://wa.me/94768927245" variant="primary" size="lg">
               Book a Safari
             </Button>
           </div>
