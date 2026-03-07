@@ -18,10 +18,10 @@ export function Hero() {
         </div>
         <div
           className="absolute inset-0 z-10"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(6, 45, 28, 0.5) 0%, rgba(13, 74, 46, 0.6) 50%, rgba(6, 45, 28, 0.85) 100%)",
-          }}
+          // style={{
+          //   background:
+          //     "linear-gradient(to bottom, rgba(6, 45, 28, 0.5) 0%, rgba(13, 74, 46, 0.6) 50%, rgba(6, 45, 28, 0.85) 100%)",
+          // }}
         />
       </div>
 
