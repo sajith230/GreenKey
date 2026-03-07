@@ -41,8 +41,8 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
+  const smtpUser = "greenkeypvt@gmail.com";
+  const smtpPass = "greenkey1980";
 
   if (!smtpUser || !smtpPass) {
     return NextResponse.json(
