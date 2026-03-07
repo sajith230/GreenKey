@@ -41,17 +41,27 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+
+  if (!smtpUser || !smtpPass) {
+    return NextResponse.json(
+      { error: "Unable to send email at this time. Please try again later." },
+      { status: 500 }
+    );
+  }
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      user: smtpUser,
+      pass: smtpPass,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: `"GreenKey Contact" <${process.env.SMTP_USER}>`,
+      from: `"GreenKey Contact" <${smtpUser}>`,
       to: "greenkeypvt@gmail.com",
       replyTo: email,
       subject: `New message from ${name}`,
