@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
           <Image
-            src="/1.jpeg"
+            src="/10.jpeg"
             alt="GreenKey — Restaurant & Hotel"
             fill
   priority
