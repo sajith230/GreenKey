@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const baseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://greenkey.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.greenkeypvt.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["/", "/room", "/food", "/gallery", "/safari", "/contact"];
