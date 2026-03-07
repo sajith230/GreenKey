@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "GreenKey — Restaurant & Hotel",
   description:
     "GreenKey — Where nature meets luxury. Dine, stay, and explore at our beautiful restaurant and hotel.",
+  verification: {
+    google: "YPTMQXOQhBG6I7VXlMCia_NJuz93HG4PLEOKdTqKreo",
+  },
 };
 
 export default function RootLayout({
