@@ -4,28 +4,28 @@ import Image from "next/image";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80";
-const ROOM_1 =
-  "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80";
-const ROOM_2 =
-  "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80";
-const ROOM_3 =
-  "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80";
+const ROOM_1 = "/16.jpeg";
+const ROOM_2 = "/17.jpeg";
+const ROOM_3 = "/18.jpeg";
 
 const rooms = [
   {
     image: ROOM_1,
-    title: "Garden View Suite",
-    description: "Spacious suite with private balcony overlooking the gardens. King bed, marble bathroom, and premium amenities.",
+    title: "VIP Room",
+    description: "Premium accommodation with two rooms. Spacious, comfortable, and fitted with quality amenities for a luxurious stay.",
+    price: "LKR 15,000",
   },
   {
     image: ROOM_2,
-    title: "Forest Retreat",
-    description: "Wake up to the sounds of nature. Floor-to-ceiling windows, wooden accents, and a serene atmosphere.",
+    title: "Family Room",
+    description: "Ideal for families. Plenty of space, comfortable bedding, and everything you need for a relaxing stay together.",
+    price: "LKR 12,000",
   },
   {
     image: ROOM_3,
-    title: "Luxury Villa",
-    description: "Private villa with pool access, living area, and dedicated butler service. The ultimate GreenKey experience.",
+    title: "Triple Room",
+    description: "Perfect for small groups or friends. Three beds, clean and cosy, with all the essentials for a great stay.",
+    price: "LKR 8,000",
   },
 ];
 
@@ -68,7 +68,14 @@ export default function RoomPage() {
                   <p className="mt-4 text-[var(--muted)] leading-relaxed">
                     {room.description}
                   </p>
-                  <Button href="/contact" variant="primary" className="mt-6">
+                  <p className="mt-3 text-lg font-semibold text-[var(--green-key)]">
+                    {room.price} <span className="text-sm font-normal text-[var(--muted)]">per night</span>
+                  </p>
+                  <Button
+                    href="https://wa.me/94768927245"
+                    variant="primary"
+                    className="mt-6"
+                  >
                     Enquire Now
                   </Button>
                 </div>

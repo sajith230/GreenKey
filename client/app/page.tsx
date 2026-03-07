@@ -26,7 +26,7 @@ export default function Home() {
           <div className="mt-6 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
             <div className="relative aspect-[21/9] min-h-[280px]">
               <Image
-                src="/3.jpeg"
+                src="/13.jpeg"
                 alt="GreenKey is located near beautiful paddy fields"
                 fill
                 unoptimized
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="mt-6 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
             <div className="relative aspect-[21/9] min-h-[280px]">
               <Image
-                src="/4.jpeg"
+                src="/11.jpeg"
                 alt="GreenKey hotel garden — our best garden"
                 fill
                 unoptimized

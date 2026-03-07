@@ -3,17 +3,19 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen min-h-[100dvh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/1.jpeg"
-          alt="GreenKey — Restaurant & Hotel"
-          fill
-          priority
-          unoptimized
-          className="object-cover"
-          sizes="100vw"
-        />
+        <div className="relative h-full w-full">
+          <Image
+            src="/1.jpeg"
+            alt="GreenKey — Restaurant & Hotel"
+            fill
+  priority
+  quality={100}
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+        </div>
         <div
           className="absolute inset-0 z-10"
           style={{
