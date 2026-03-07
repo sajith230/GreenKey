@@ -41,7 +41,7 @@ export default function SafariPage() {
             Spot iconic wildlife, learn from knowledgeable guides, and create memories that last a lifetime.
           </p>
 
-          <div className="mt-12 max-w-3xl mx-auto text-center space-y-4 text-[var(--muted)] leading-relaxed">
+          <div className="mt-12 max-w-3xl mx-auto text-center space-y-4 text-[var(--muted)] leading-relaxed animate-card-in animate-card-in-delay-1">
             <p>
               At GreenKey, our safari experiences are designed to bring you closer to nature without compromising on comfort or safety. Whether you join us at first light for a morning game drive or set out in the golden hour for a sunset safari, our trained guides share their knowledge of the land, its wildlife, and the stories that make each journey unique.
             </p>
@@ -51,10 +51,12 @@ export default function SafariPage() {
           </div>
 
           <div className="mt-14 grid md:grid-cols-2 gap-10">
-            {experiences.map((exp) => (
+            {experiences.map((exp, i) => (
               <div
                 key={exp.title}
-                className="rounded-2xl overflow-hidden bg-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-strong)] transition-all duration-300 group"
+                className={`rounded-2xl overflow-hidden bg-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-strong)] transition-all duration-300 group animate-card-in ${
+                  i === 0 ? "animate-card-in-delay-2" : "animate-card-in-delay-3"
+                }`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
@@ -75,7 +77,7 @@ export default function SafariPage() {
               </div>
             ))}
           </div>
-          <div className="mt-14 text-center">
+          <div className="mt-14 text-center animate-card-in animate-card-in-delay-4">
             <Button href="https://wa.me/94768927245" variant="primary" size="lg">
               Book a Safari
             </Button>

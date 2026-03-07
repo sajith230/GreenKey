@@ -48,7 +48,9 @@ export default function RoomPage() {
             {rooms.map((room, i) => (
               <div
                 key={room.title}
-                className={`grid md:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+                className={`grid md:grid-cols-2 gap-10 items-center animate-card-in ${
+                  i === 0 ? "animate-card-in-delay-1" : i === 1 ? "animate-card-in-delay-2" : "animate-card-in-delay-3"
+                } ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}
               >
                 <div className={i % 2 === 1 ? "md:order-2" : ""}>
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">

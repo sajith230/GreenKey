@@ -49,7 +49,7 @@ export default function Home() {
           <div className="mt-6 rounded-2xl overflow-hidden shadow-[var(--shadow-strong)]">
             <div className="relative aspect-[21/9] min-h-[280px]">
               <Image
-                src="/11.jpeg"
+                src="/10.jpeg"
                 alt="GreenKey hotel garden — our best garden"
                 fill
                 unoptimized

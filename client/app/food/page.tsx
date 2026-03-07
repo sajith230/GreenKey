@@ -45,10 +45,12 @@ export default function FoodPage() {
             From breakfast by the garden to candlelit dinners, every meal is an experience.
           </p>
           <div className="mt-14 grid sm:grid-cols-3 gap-8">
-            {highlights.map((item) => (
+            {highlights.map((item, i) => (
               <div
                 key={item.title}
-                className="group rounded-2xl overflow-hidden bg-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-strong)] transition-all duration-300"
+                className={`group rounded-2xl overflow-hidden bg-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-strong)] transition-all duration-300 animate-card-in ${
+                  i === 0 ? "animate-card-in-delay-1" : i === 1 ? "animate-card-in-delay-2" : "animate-card-in-delay-3"
+                }`}
               >
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <Image
@@ -69,7 +71,7 @@ export default function FoodPage() {
             ))}
           </div>
           <div className="mt-14 text-center">
-            <Button href="/contact" variant="secondary" size="lg">
+            <Button href="https://wa.me/94768927245" variant="secondary" size="lg">
               Reserve a Table
             </Button>
           </div>

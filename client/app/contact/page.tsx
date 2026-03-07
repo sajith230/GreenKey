@@ -23,7 +23,7 @@ export default function ContactPage() {
       <section className="py-16 lg:py-24 bg-[var(--cream)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fade-up-section">
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-10 space-y-4">
+            <div className="text-center mb-10 space-y-4 animate-card-in animate-card-in-delay-1">
               <p className="text-[var(--muted)] leading-relaxed">
                 We’re here to help with room reservations, table bookings, safari trips, or any questions about your stay at GreenKey. Send us a message and we’ll get back to you as soon as we can.
               </p>
@@ -32,7 +32,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-white shadow-[var(--shadow-soft)] border border-[var(--border)] p-8 sm:p-10">
+            <div className="rounded-2xl bg-white shadow-[var(--shadow-soft)] border border-[var(--border)] p-8 sm:p-10 animate-card-in animate-card-in-delay-2">
               <h2 className="font-serif text-2xl font-semibold text-[var(--green-key-dark)]">
                 Get in Touch
               </h2>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </form>
             </div>
             <div className="mt-10 grid sm:grid-cols-2 gap-6">
-              <div className="rounded-xl bg-white border border-[var(--border)] p-6">
+              <div className="rounded-xl bg-white border border-[var(--border)] p-6 animate-card-in animate-card-in-delay-3">
                 <p className="text-sm font-medium text-[var(--accent-gold)]">Address</p>
                 <p className="mt-2 text-[var(--muted)]">
                   GreenKey Resort & Restaurant<br />
@@ -90,12 +90,12 @@ export default function ContactPage() {
                   Serenity Valley
                 </p>
               </div>
-              <div className="rounded-xl bg-white border border-[var(--border)] p-6">
+              <div className="rounded-xl bg-white border border-[var(--border)] p-6 animate-card-in animate-card-in-delay-4">
                 <p className="text-sm font-medium text-[var(--accent-gold)]">Phone & Email</p>
                 <p className="mt-2 text-[var(--muted)]">
                   <a href="tel:0788362020" className="hover:text-[var(--green-key)] transition-colors">078-8362020</a><br />
                   <a href="tel:0768927245" className="hover:text-[var(--green-key)] transition-colors">076-8927245</a><br />
-                  <a href="mailto:greenkey@gmail.com" className="hover:text-[var(--green-key)] transition-colors break-all">greenkey@gmail.com</a>
+                  <a href="mailto:greenkeypvt@gmail.com" className="hover:text-[var(--green-key)] transition-colors break-all">greenkeypvt@gmail.com</a>
                 </p>
               </div>
             </div>
